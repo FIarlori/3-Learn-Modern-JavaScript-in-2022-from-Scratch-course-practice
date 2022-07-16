@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  //Hide display paragraphs
+  $(".hide-btn").click(function(){
+     $("h1").hide();
+  });
+
+  //Show display paragraphs
+  $(".show-btn").click(function(){
+     $("h1").show();
+  });
+});
+</script>
+</head>
+<body>
+ 
+  <button type="button" class="hide-btn">Hide Paragraphs</button>
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <h1>First h1 element</h1>
+    <h1>Second h1 element</h1>
+ 
+</body>
+</html>

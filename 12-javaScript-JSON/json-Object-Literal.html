@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h2>Creating an Object Parsing JSON and Looping JavaScript Object Values</h2>
+<p id="demo"></p>
+ 
+<script>
+const fruits = '{"name":"apple", "color":"red", "shape":"round"}';
+const myObj = JSON.parse(fruits);
+
+let text = "";
+for (let x in myObj) {
+  text += myObj[x] + ", ";
+}
+
+document.getElementById("demo").innerHTML = text;
+ 
+</script>
+ 
+</body>
+</html>

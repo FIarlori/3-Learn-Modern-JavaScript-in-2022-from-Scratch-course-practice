@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h2>Create Object from JSON String</h2>
+ 
+<p id="demo"></p>
+ 
+<script>
+let str= '{"fruits":[' +
+'{"name":"Mango","Color":"Yellow" },' +
+'{"name":"apple","Color":"red" }]}';
+
+ 
+const obj = JSON.parse(str);
+document.getElementById("demo").innerHTML =
+obj.fruits[0].name + " " + obj.fruits[0].Color;
+</script>
+</body>
+</html>

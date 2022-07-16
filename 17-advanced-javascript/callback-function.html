@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<script>
+
+// function
+function welcome(name, callback) {
+    console.log('Welcome' + ' ' + name);
+    callback();
+}
+
+// callback function
+function greatday() {
+    console.log('Have a great day');
+}
+
+// passing function as an argument
+welcome('Peter', greatday);
+
+</script>
+ 
+</body>
+</html>
